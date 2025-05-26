@@ -1,0 +1,7 @@
+### CREATE REVIEW
+POST http://127.0.0.1:8000/api/v1/reviews/book/dc564463-dddf-42c7-9797-2d63a723341b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdGVtYTJpQG1haWwuY29tIiwidXNlcl91aWQiOiIwOGIwZmE1MS1hMDFkLTQyMjItOTU5My0zYmVhN2Q2ZmI0ZjAiLCJyb2xlIjoidXNlciJ9LCJleHAiOjE3NDYzODE0NTAsImp0aSI6IjJmOWVjMmUyLWUzYjQtNDk5Ni1hNzQ0LTkxN2Q4N2Y0YmIxOSIsInJlZnJlc2giOmZhbHNlfQ.duPnYsAekUuP3RTh42EE4xxz5zZ4U1ey-ivr6vrke2M
+
+{
+    "rating": 3
+}

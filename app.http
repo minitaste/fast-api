@@ -1,0 +1,57 @@
+### ACCESS TOKEN
+POST http://127.0.0.1:8000/api/v1/auth/login
+
+{
+    "email": "nazar.voyevoda@gmail.com",
+    "password": "19082005"
+}
+
+
+### REFRESH TOKEN
+GET http://127.0.0.1:8000/api/v1/auth/refresh-token
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibmF6YXIudm95ZXZvZGFAZ21haWwuY29tIiwidXNlcl91aWQiOiIwZDNhMDY3YS0zMmYxLTQ0MGItYmE2MS04MGE1ZTk0MTRkNDcifSwiZXhwIjoxNzQ2OTY4NDQ3LCJqdGkiOiI1ZjBjMTZjMS1mN2I4LTQ4ZWYtYWNjMi0zZTU3ZjJkOTYwM2UiLCJyZWZyZXNoIjp0cnVlfQ.yisIO-lpMlZyNBSMOoZVuGNY6rYxQtU713A7_x_tTTg
+
+### REVOOKE TOKEN
+GET http://127.0.0.1:8000/api/v1/auth/logout
+Authorization: Bearer eyJ1c2VyIjp7ImVtYWlsIjoidGVzdGVtYWlAbWFpbC5jb20iLCJ1c2VyX3VpZCI6ImJhMzFkOWIxLWU5ZGQtNGQyMC1hNTk2LTk5NDI2YTZhNDFlNSJ9LCJleHAiOjE3NDYyNzA0MDgsImp0aSI6ImNlN2RmZTYyLWJlZWQtNDgzZi05YTg4LTRmODczOGYwMWQ0NSIsInJlZnJlc2giOmZhbHNlfQ.17Zfru_h2fWeHg2goUV98AKiPqJXDcrFaPjUobkJ0lI
+
+### GET CURRENT USER
+GET http://127.0.0.1:8000/api/v1/auth/me
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdGVtYTJpQG1haWwuY29tIiwidXNlcl91aWQiOiIwOGIwZmE1MS1hMDFkLTQyMjItOTU5My0zYmVhN2Q2ZmI0ZjAiLCJyb2xlIjoidXNlciJ9LCJleHAiOjE3NDYzODcxNDQsImp0aSI6ImRkZGNlYjdjLWJjZjYtNGRhNC05ZDE1LWE5NDczNzhlYzIyNCIsInJlZnJlc2giOmZhbHNlfQ.U4PUXg9ys66JnOxDOyGpaltL3D9_mrvunuQURTSgtsc
+
+### SIGN UP
+POST http://127.0.0.1:8000/api/v1/auth/signup
+
+{
+    "username": "clown",
+    "first_name": "name1",
+    "last_name": "lastname2",
+    "email": "nazar.voyevoda@gmail.com",
+    "password": "password1234"
+}
+
+### SEND EMAIL
+POST http://127.0.0.1:8000/api/v1/auth/send-email
+
+{
+    "adressess": [
+        "nazar.voyevoda@gmail.com"
+    ]
+}
+
+### RESET PASSWORD
+POST http://127.0.0.1:8000/api/v1/auth/password-reset
+
+{
+    "email": "nazar.voyevoda@gmail.com"
+}
+
+### RESET PASSWORD
+POST http://127.0.0.1:8000/api/v1/auth/password-reset-confirm/eyJlbWFpbCI6Im5hemFyLnZveWV2b2RhQGdtYWlsLmNvbSJ9.aB3CaA.QeaEPM28TKa3YG1fn7OxLKCBqME
+
+{
+    "new_password": "19082005",
+    "confirm_new_password": "19082005"
+}
+
+

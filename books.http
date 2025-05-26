@@ -1,0 +1,34 @@
+### GET ALL BOOKS
+GET http://127.0.0.1:8000/api/v1/books/
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoibmF6YXIudm95ZXZvZGFAZ21haWwuY29tIiwidXNlcl91aWQiOiIwZDNhMDY3YS0zMmYxLTQ0MGItYmE2MS04MGE1ZTk0MTRkNDciLCJyb2xlIjoidXNlciJ9LCJleHAiOjE3NDY3OTU2MDksImp0aSI6ImEyMjVjNzZkLWJmYzctNDAyMS1iMjg5LWM2ZmQwNTlmY2VkNiIsInJlZnJlc2giOmZhbHNlfQ.zAioLJhlBw6LXktumEM4R9pq7ojagX8SvESuMs4F2SE
+
+### GET USER BOOKS
+GET http://127.0.0.1:8000/api/v1/books/user/ba31d9b1-e9dd-4d20-a596-99426a6a41e5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdGVtYTJpQG1haWwuY29tIiwidXNlcl91aWQiOiIwOGIwZmE1MS1hMDFkLTQyMjItOTU5My0zYmVhN2Q2ZmI0ZjAiLCJyb2xlIjoidXNlciJ9LCJleHAiOjE3NDYzNjg5ODAsImp0aSI6ImUyZWU4NWJiLTE5MDctNDE3OC1iMTQ3LWViYjE4MDg3NzA0MCIsInJlZnJlc2giOmZhbHNlfQ.LBoHS3neKLXaZlyMry--II-iqss8ov9y7NV-Ut5YHIQ
+
+### GET BOOK BY ID  
+GET http://127.0.0.1:8000/api/v1/books/dc564463-dddf-42c7-9797-2d63a723341b
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdGVtYTJpQG1haWwuY29tIiwidXNlcl91aWQiOiIwOGIwZmE1MS1hMDFkLTQyMjItOTU5My0zYmVhN2Q2ZmI0ZjAiLCJyb2xlIjoidXNlciJ9LCJleHAiOjE3NDYzODY5NDcsImp0aSI6IjIyYWIzYWU0LTVhYzItNDIwNy05NzI3LTI1ZjE2OTlhMGM5MCIsInJlZnJlc2giOmZhbHNlfQ.c3SIkDxBpihJw4bOAw43u2mtbWSF7rXDC0DAqDhlx3c
+
+### CREATE BOOK
+POST http://127.0.0.1:8000/api/v1/books
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImVtYWlsIjoidGVzdGVtYWlAbWFpbC5jb20iLCJ1c2VyX3VpZCI6ImJhMzFkOWIxLWU5ZGQtNGQyMC1hNTk2LTk5NDI2YTZhNDFlNSJ9LCJleHAiOjE3NDYyNzE0NjEsImp0aSI6IjRmNzY1MzFmLWU5ZjQtNGEzNi1iYzBjLWRmNjVmODFkNDUzMSIsInJlZnJlc2giOmZhbHNlfQ.wECY41LF2wjVCNpobizofsIMwzhG4iPZp6eVpC5HlEw
+
+{
+    "title": "Little Prince",
+    "description": "Magician book",
+    "author": ""
+}
+
+### UPDATE BOOK
+PATCH http://127.0.0.1:8000/api/v1/books/b8c80766-cab7-4118-89c3-57ecf311d816
+ 
+ {
+    "title": "Little",
+    "description": "Magician book",
+    "author": ""
+}
+
+### DELETE BOOK
+DELETE http://127.0.0.1:8000/api/v1/books/d7c93eb1-bd48-49f9-b638-77b976164c92
+
